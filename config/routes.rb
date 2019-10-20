@@ -5,5 +5,10 @@ Rails.application.routes.draw do
   resources :users do
     resources :blogs
   end
+
+  # resources :users, only: %i[index show update create destroy edit]
+
+  resources :payment_link
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

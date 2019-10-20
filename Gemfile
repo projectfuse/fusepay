@@ -30,6 +30,10 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+gem 'bootstrap', '~> 4.3.1'
+gem 'jquery-rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'devise'
@@ -38,6 +42,8 @@ gem 'devise'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
+  gem 'pry-byebug'
+  gem 'pry-rails'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
